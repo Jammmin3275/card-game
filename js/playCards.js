@@ -39,6 +39,16 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
     }
+     var doDrawCard1 = function(){
+        var c = cardDeck.draw();
+        if(!c){
+            showError('no more cards');
+            return;
+        }
+        hand1[hand1.length] = c;
+        cardDeck.spread();
+        showHand1();
+    }
     var doOrderByRank = function(){
         cardDeck.orderByRank();
         cardDeck.spread(); // update card table
@@ -49,6 +59,7 @@ $(document).ready(function(){
     }
     $('#shuffler').click(doShuffle);
     $('#draw').click(doDrawCard);
+     $('#draw1').click(doDrawCard1);
     $('#shuffleDraw').click(function(){
         doShuffle();
         doDrawCard();
