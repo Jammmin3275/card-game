@@ -42,12 +42,12 @@ $(document).ready(function(){
          
     }
      var doDrawCard1 = function(){
-        var c1 = cardDeck.draw1();
-        if(!c1){
+        var d = cardDeck.draw1();
+        if(!d){
             showError('Derp more cards');
             return;
         }
-        hand1[hand.length] = c;
+        hand1[hand.length] = d;
         cardDeck.spread();
         showHand1();
     }
