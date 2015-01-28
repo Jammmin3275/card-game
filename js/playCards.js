@@ -30,7 +30,7 @@ $(document).ready(function(){
         cardDeck.spread(); // update card table
     }
     var doDrawCard = function(){
-        var c = cardDeck.draw();
+        var c and c1 = cardDeck.draw();
         if(!c){
             showError('no more cards');
             return;
@@ -39,7 +39,7 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
         
-          hand1[hand1.length] = c;
+          hand1[hand1.length] = c1;
         cardDeck.spread();
         showHand1();
     }
