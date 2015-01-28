@@ -3,11 +3,14 @@ $(document).ready(function(){
     cardDeck.spread(); // show it
 
     var hand = [];
+     var hand1 = [];
     var showError = function(msg){
+    
         $('#error').html(msg).show();
         setTimeout(function(){
             $('#error').fadeOut('slow');
         },3000);
+    
    
     }
     var showHand = function(){
