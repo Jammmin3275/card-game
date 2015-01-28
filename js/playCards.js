@@ -30,7 +30,7 @@ $(document).ready(function(){
         cardDeck.spread(); // update card table
     }
     var doDrawCard = function(){
-        var c and c1 = cardDeck.draw();
+        var c = cardDeck.draw();
         if(!c){
             showError('no more cards');
             return;
@@ -39,17 +39,15 @@ $(document).ready(function(){
         cardDeck.spread();
         showHand();
         
-          hand1[hand1.length] = c1;
-        cardDeck.spread();
-        showHand1();
+         
     }
      var doDrawCard1 = function(){
-        var c = cardDeck.draw();
-        if(!c){
-            showError('no more cards');
+        var c1 = cardDeck.draw1();
+        if(!c1){
+            showError('Derp more cards');
             return;
         }
-        hand1[hand1.length] = c;
+        hand1[hand.length] = c;
         cardDeck.spread();
         showHand1();
     }
