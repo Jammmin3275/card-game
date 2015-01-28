@@ -14,13 +14,12 @@ $(document).ready(function(){
    
     }
     var showHand = function(){
-        var el = $('#yourHand')
+        var el = $('#yourHand');
         el.html('');
         for(var i=0;i<hand.length;i++){
             el.append(hand[i].getHTML());
         }
-         var cpuHand = function(){
-        var el = $('#cpuHand')
+        el = $('#cpuHand');
         el.html('');
         for(var i=0;i<hand1.length;i++){
             el.append(hand1[i].getHTML());
