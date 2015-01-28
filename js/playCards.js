@@ -42,8 +42,8 @@ $(document).ready(function(){
          
     }
      var doDrawCard1 = function(){
-        var d = cardDeck.draw1();
-        if(!d){
+        var c = cardDeck.draw();
+        if(!c){
             showError('Derp more cards');
             return;
         }
