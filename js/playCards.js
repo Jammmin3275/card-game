@@ -38,7 +38,8 @@ $(document).ready(function(){
         hand[hand.length] = c;
         cardDeck.spread();
         showHand();
-          hand1[hand.length] = c;
+        
+          hand1[hand1.length] = c;
         cardDeck.spread();
         showHand1();
     }
