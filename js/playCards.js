@@ -8,6 +8,12 @@ $(document).ready(function(){
         setTimeout(function(){
             $('#error').fadeOut('slow');
         },3000);
+        var hand1 = [];
+    var showError = function(msg){
+        $('#error').html(msg).show();
+        setTimeout(function(){
+            $('#error').fadeOut('slow');
+        },3000);
     }
     var showHand = function(){
         var el = $('#yourHand')
