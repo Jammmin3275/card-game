@@ -38,6 +38,9 @@ $(document).ready(function(){
         hand[hand.length] = c;
         cardDeck.spread();
         showHand();
+          hand1[hand.length] = c;
+        cardDeck.spread();
+        showHand1();
     }
      var doDrawCard1 = function(){
         var c = cardDeck.draw();
